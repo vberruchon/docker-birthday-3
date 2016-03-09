@@ -1,6 +1,7 @@
 
 # Docker Birthday #3
 
+<a href="https://www.docker.com/docker-birthday"><img align="right" src="https://www.docker.com/sites/default/files/illustration-com-container-party.png" style="float: right;margin-right: 7px;margin-bottom: 7px;" height="300px" width="400px></a>
 
 ### Slides: [Docker Overview] (https://docs.google.com/presentation/d/1MKQ8KTxeuSYPHp7LjuOy9k8FgzAApH9i-6A1micJa1A/edit?usp=sharing)
 
@@ -8,7 +9,7 @@
 ### Training materials:
 
 
-![Docker Birthday #3](https://www.docker.com/sites/default/files/illustration-com-container-party.png){:style="float: right;margin-right: 7px;margin-bottom: 7px;"}This year, to celebrate the Docker Project’s 3rd birthday, the Docker community is joining forces with a number of partners in the broader tech and open-source community to host a series of events focused on providing Docker training to beginners during the week of March 21-26. 
+This year, to celebrate the Docker Project’s 3rd birthday, the Docker community is joining forces with a number of partners in the broader tech and open-source community to host a series of events focused on providing Docker training to beginners during the week of March 21-26. 
 
 Based on the feedback we’ve received from Docker meetup organizers, we learned that many meetup attendees are new to Docker and we want to make sure that we welcome them warmly into the Docker community. To ensure that these events are inclusive for everyone attending including underrepresented minorities, we’re happy to announce that we have teamed up with the following partners who’re actively contributing to organizing many Docker Birthday celebrations around the world:
 
