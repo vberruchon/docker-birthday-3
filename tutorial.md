@@ -534,7 +534,8 @@ Once you are familiar with Docker compose install it using the [instructions](ht
 Pull the voting-app repository already available at [Github Repo](https://github.com/docker/docker-birthday-3/example-voting-app.git).
 
 ```
-git pull https://github.com/docker/docker-birthday-3/example-voting-app.git
+git pull https://github.com/docker/docker-birthday-3.git
+cd docker-birthday-3/example-voting-app
 ```
 
 A Docker compose file is available for you to start the voting-app and get familiar with the containers and the app.
