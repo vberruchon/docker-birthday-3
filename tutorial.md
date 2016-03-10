@@ -531,10 +531,10 @@ Once you are familiar with Docker compose install it using the [instructions](ht
 <a id="pullimage"></a>
 ### 3.1 Pull voting-app images
 
-Pull the voting-app repository already available at [Github Repo](https://github.com/ManoMarks/example-voting-app.git).
+Pull the voting-app repository already available at [Github Repo](https://github.com/docker/docker-birthday-3/example-voting-app.git).
 
 ```
-git pull https://github.com/ManoMarks/example-voting-app.git
+git pull https://github.com/docker/docker-birthday-3/example-voting-app.git
 ```
 
 A Docker compose file is available for you to start the voting-app and get familiar with the containers and the app.
