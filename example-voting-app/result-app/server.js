@@ -51,7 +51,7 @@ function postBirthday() {
       if(err) console.log("error:"+err);
       if(res.statusCode == 200) {
         var body = res.body.response;
-        console.log("content"+body);
+        console.log(body);
       }
     });
   }
