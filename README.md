@@ -1,9 +1,6 @@
 
 # Docker Birthday #3
 
-### Slides: [Docker Overview] (https://docs.google.com/presentation/d/1MKQ8KTxeuSYPHp7LjuOy9k8FgzAApH9i-6A1micJa1A/edit?usp=sharing)
-
-
 ### Training materials:
 
 
