@@ -3,5 +3,5 @@
   "twitter":"@docker",
   "location":"San Francisco, CA, USA",
   "repo":["example/examplevotingapp_voting-app","example/examplevotingapp_result-app"],
-  "vote":"Cats"
+  "vote":"Cat"
 }
