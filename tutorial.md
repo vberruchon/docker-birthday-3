@@ -1,5 +1,5 @@
 <a id="top"></a>
-<img src="https://raw.githubusercontent.com/docker/community/master/Docker-Birthday-3/tutorial-images/logo.png" alt="docker logo">
+<img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/tutorial-images/logo.png" alt="docker logo">
 
 *Learn to build and deploy your distributed applications easily to the cloud with Docker*
 
@@ -26,7 +26,7 @@ Containers take a different approach: by leveraging the low-level mechanics of t
 This tutorial aims to be the one-stop shop for getting your hands dirty with Docker. Apart from demystifying the Docker landscape, it'll give you hands-on experience with building and deploying your own webapps. You'll quickly build a multi-container voting app using multiple languages. Even if you have no prior experience with deployments, this tutorial should be all you need to get started.
 
 ## Using this Document
-This document contains a series of several sections, each of which explains a particular aspect of Docker. In each section, you will be typing commands (or writing code). All the code used in the tutorial is available in the [Github repo](https://github.com/docker/community/tree/master/Docker-Birthday-3).
+This document contains a series of several sections, each of which explains a particular aspect of Docker. In each section, you will be typing commands (or writing code). All the code used in the tutorial is available in the [Github repo](https://github.com/docker/Docker-Birthday-3).
 
 <a href="#top" class="top" id="table-of-contents">Top</a>
 ## Table of Contents
@@ -63,7 +63,7 @@ This document contains a series of several sections, each of which explains a pa
 <a href="#table-of-contents" class="top" id="preface">Top</a>
 ## Preface
 
-> Note: This tutorial uses version **1.10.1** of Docker. If you find any part of the tutorial incompatible with a future version, please raise an [issue](https://github.com/docker/community/issues). Thanks!
+> Note: This tutorial uses version **1.10.1** of Docker. If you find any part of the tutorial incompatible with a future version, please raise an [issue](https://github.com/docker/Docker-Birthday-3/issues). Thanks!
 
 <a id="prerequisites"></a>
 ### Prerequisites
@@ -197,7 +197,7 @@ You can now open [http://192.168.99.100:32772](http://192.168.99.100:32772) to s
 ```
 $ docker run --name static-site -e AUTHOR=Your_Name -d -p 8888:80 seqvence/static-site
 ```
-<img src="https://raw.githubusercontent.com/docker/community/master/Docker-Birthday-3/tutorial-images/static.png" title="static">
+<img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/tutorial-images/static.png" title="static">
 
 I'm sure you agree that was super simple. To deploy this on a real server you would just need to install docker, and run the above docker command.
 
@@ -249,7 +249,7 @@ Then there are two more types of images that can be both base and child images, 
 <a id="our-image"></a>
 ### 2.3 Our First Image
 
-Now that you have a better understanding of images, it's time to create our own. Our goal in this section will be to create an image that sandboxes a simple [Flask](http://flask.pocoo.org) application. For the purposes of this workshop, I've already created a fun, little [Flask app](https://github.com/docker/community/master/Docker-Birthday-3/flask-app) that displays a random cat `.gif` every time it is loaded - because you know, who doesn't like cats? If you haven't already, please go ahead the clone the repository locally.
+Now that you have a better understanding of images, it's time to create our own. Our goal in this section will be to create an image that sandboxes a simple [Flask](http://flask.pocoo.org) application. For the purposes of this workshop, I've already created a fun, little [Flask app](https://github.com/docker/Docker-Birthday-3/flask-app) that displays a random cat `.gif` every time it is loaded - because you know, who doesn't like cats? If you haven't already, please go ahead the clone the repository locally.
 
 <a id="dockerfiles"></a>
 ### 2.4 Dockerfile
@@ -485,7 +485,7 @@ $ docker run -p 8888:5000 YOUR_USERNAME/myfirstapp
 
 Head over to the URL above and your app should be live.
 
-<img src="https://raw.githubusercontent.com/docker/community/master/Docker-Birthday-3/tutorial-images/catgif.png" title="static">
+<img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/tutorial-images/catgif.png" title="static">
 
 Congratulations! You have successfully created your first docker image.
 
@@ -726,7 +726,7 @@ Open a browser and access [http://192.168.64.2:5001/birthday.html](http://192.16
 The page displayed will look like the one below:
 
 
-<img src="https://raw.githubusercontent.com/docker/community/master/Docker-Birthday-3/tutorial-images/submit_work.png" title="static">
+<img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/tutorial-images/submit_work.png" title="static">
 
 Button message is more than intuitive so go ahead and press it. 
 
