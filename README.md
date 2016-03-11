@@ -28,16 +28,15 @@ There will be a self-paced beginners’ tutorial for attendees to learn Docker b
 ### Pre-tutorial preparation
 At the training, you will need to bring your own computer. Before you go to a birthday party training, there are some steps you should do some preparation to get your work environment ready. Here are the steps:
 
-1 [Install Docker](https://docs.docker.com/engine/installation/)
-1 If you have a Mac or Windows machine, you should have [Docker Machine](https://docs.docker.com/machine/overview/). If you're using Linux you can skip to the next step.
-1 If you're new to Docker, pre-pull the docker images for the very basic tutorial
+1. [Install Docker](https://docs.docker.com/engine/installation/)
+1. If you have a Mac or Windows machine, you should have [Docker Machine](https://docs.docker.com/machine/overview/). If you're using Linux you can skip to the next step.
+1. If you're new to Docker, pre-pull the docker images for the very basic tutorial
 ```bash
 docker pull hello-world
 docker pull busybox
 docker pull seqvence/static-site
 ```
-
-1 To run the application and participate in the rest of the training, pre-pull these images
+1. To run the application and participate in the rest of the training, pre-pull these images
 ```bash
 docker pull node:0.10
 docker pull python:2.7-alpine
