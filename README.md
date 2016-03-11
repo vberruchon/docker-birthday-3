@@ -15,7 +15,7 @@ Based on the feedback we’ve received from Docker meetup organizers, we learned
 - [Women Who Go] (http://www.womenwhogo.org/)
 - [Ruby Central] (http://rubycentral.org/)
 
-Without revealing too many details at this points, participants in the training will go through the steps involved in running and developing a simple voting app from a fresh computer using Docker Toolbox and Compose. This simple app will include:
+Without revealing too many details at this point, participants in the training will go through the steps involved in running and developing a simple voting app from a fresh computer using Docker Toolbox and Compose. This simple app will include:
 
 - A Python webapp which lets you vote between several options
 - A Redis queue which collects new votes
@@ -25,5 +25,26 @@ Without revealing too many details at this points, participants in the training 
 
 There will be a self-paced beginners’ tutorial for attendees to learn Docker basics as they build and deploy this app locally. Experienced Docker users will serve as mentors to help beginners successfully complete the training.
 
+### Pre-tutorial preparation
+At the training, you will need to bring your own computer. Before you go to a birthday party training, there are some steps you should do some preparation to get your work environment ready. Here are the steps:
+
+1 [Install Docker](https://docs.docker.com/engine/installation/)
+1 If you have a Mac or Windows machine, you should have [Docker Machine](https://docs.docker.com/machine/overview/). If you're using Linux you can skip to the next step.
+1 If you're new to Docker, pre-pull the docker images for the very basic tutorial
+```bash
+docker pull hello-world
+docker pull busybox
+docker pull seqvence/static-site
+```
+
+1 To run the application and participate in the rest of the training, pre-pull these images
+```bash
+docker pull node:0.10
+docker pull python:2.7-alpine
+docker pull java:7
+docker pull redis:alpine
+docker pull postgres:9.4
+```
+And now you're ready. See you at the birthday party!
 
 <a href="https://www.docker.com/docker-birthday"><img align="right" src="https://www.docker.com/sites/default/files/illustration-com-container-party.png"></a>
