@@ -64,9 +64,7 @@ This document contains a series of several sections, each of which explains a pa
 
 <a id="prerequisites"></a>
 ### Prerequisites
-There are no specific skills needed for this tutorial beyond a basic comfort with the command line and using a text editor. Prior experience in developing web applications will be helpful but is not required. As you proceed further along the tutorial, we'll make use of Docker Hub, so please create an account on each of these websites:
-
-- [Docker Hub](https://hub.docker.com/)
+There are no specific skills needed for this tutorial beyond a basic comfort with the command line and using a text editor. Prior experience in developing web applications will be helpful but is not required. As you proceed further along the tutorial, we'll make use of [Docker Hub](https://hub.docker.com/)
 
 <a id="setup"></a>
 ### Setting up your computer
