@@ -1,7 +1,7 @@
 <a id="top"></a>
-<img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/tutorial-images/logo.png" alt="docker logo">
+<img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/master/tutorial-images/logo.png" alt="docker logo">
 
-Special thanks and shout out to [Prakhar Srivastav](http://prakhar.me) for his contribution to this tutorial. 
+Special thanks and shout out to [Prakhar Srivastav](http://prakhar.me) for his contribution to this tutorial.
 
 <a href="#top" class="top" id="getting-started">Top</a>
 ## Getting Started: FAQs
@@ -192,7 +192,7 @@ You can now open [http://192.168.99.100:32772](http://192.168.99.100:32772) to s
 ```
 $ docker run --name static-site -e AUTHOR=Your_Name -d -p 8888:80 seqvence/static-site
 ```
-<img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/tutorial-images/static.png" title="static">
+<img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/master/tutorial-images/static.png" title="static">
 
 I'm sure you agree that was super simple. To deploy this on a real server you would just need to install docker, and run the above docker command.
 
@@ -480,7 +480,7 @@ $ docker run -p 8888:5000 YOUR_USERNAME/myfirstapp
 
 Head over to the URL above and your app should be live.
 
-<img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/tutorial-images/catgif.png" title="static">
+<img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/master/tutorial-images/catgif.png" title="static">
 
 Congratulations! You have successfully created your first docker image.
 
@@ -501,12 +501,12 @@ Pushing the image is achieved by running the following command*:
 ```
 $ docker push YOUR_USERNAME/myfirstapp
 The push refers to a repository [docker.io/YOUR_USERNAME/myfirstapp]
-82ee1a5ef6e9: Pushed 
-ecc18069267f: Pushed 
-e0e4898a45e7: Pushed 
-9698a0f385a6: Pushed 
-acb71626a146: Pushed 
-3f1ec2e56b6b: Pushed 
+82ee1a5ef6e9: Pushed
+ecc18069267f: Pushed
+e0e4898a45e7: Pushed
+9698a0f385a6: Pushed
+acb71626a146: Pushed
+3f1ec2e56b6b: Pushed
 18efc99a87df: Pushed
 ```
 
@@ -515,7 +515,7 @@ acb71626a146: Pushed
 <a id="dockercompose"></a>
 ### 2.6 [Docker compose](https://docs.docker.com/compose/)
 
-You know now how to build your own Docker image so let's take it to the next level and glue things together. For this assignment you have to run multiple containers and using Docker compose is the best way to achieve that. 
+You know now how to build your own Docker image so let's take it to the next level and glue things together. For this assignment you have to run multiple containers and using Docker compose is the best way to achieve that.
 
 Start by quickly reading the documentation available [here](https://docs.docker.com/compose/overview/).
 
@@ -569,7 +569,7 @@ root@f854dff5ce6d:/#
 <a id="modifyapp"></a>
 #### 3.2.1 Modify app.py
 
-In the folder ```example-voting-app/voting-app``` you need to edit the app.py and change the two options for the programming languages you chose. 
+In the folder ```example-voting-app/voting-app``` you need to edit the app.py and change the two options for the programming languages you chose.
 
 Edit the following lines:
 
@@ -585,12 +585,12 @@ option_a = os.getenv('OPTION_A', "Python")
 option_b = os.getenv('OPTION_B', "Javascript")
 ```
 
-Go ahead start the application, change the application files, rewrite Dockerfiles and Docker compose files. 
+Go ahead start the application, change the application files, rewrite Dockerfiles and Docker compose files.
 
 <a id="modifyconfig"></a>
 #### 3.2.2 Modify config.json
 
-Modifying the config.json is important when validating your submission to Docker Birthday Challenge. 
+Modifying the config.json is important when validating your submission to Docker Birthday Challenge.
 File is located in ```example-voting-app/result-app/views``` directory.
 
 Its content looks now like:
@@ -622,7 +622,7 @@ and you need to replace it with your data:
 
 ---
 **Important:**
- 
+
 - You need to update the file with your data to be able to submit your entry in the competition.
 - *repo* section should contain the name of the images as you tag them and upload them to Docker Hub ( more information at [3.2.5 Push images to Docker Hub](#pushimagestodockerhub) )
 - *location* format is **City, Country**
@@ -636,10 +636,10 @@ However you decide to build your images using Docker files do not forget to test
 
 ###To check:
 
-- File **config.json** must be available in one of the images you are going to build next. 
+- File **config.json** must be available in one of the images you are going to build next.
 	- You need to make its content available via an HTTP call on port 80.
 	- Example of the HTTP GET call:
-	
+
 	```
 	$ curl http://container_id:80/getconfig
 	{
@@ -650,7 +650,7 @@ However you decide to build your images using Docker files do not forget to test
 	  			"johnd/votingapp_result-app"],
 	  "vote":"Python"
 	}
-	``` 
+	```
 - Your containers have an ENTRYPOINT or COMMAND so that when started with the command ```docker run -d image_name ``` they will not exit immediately.
 
 You are all set then. Navigate to each of the directories where you have a Dockerfile to build and tag your images that you want to submit.
@@ -675,7 +675,7 @@ $ docker push johnd/votingapp_voting-app
 $ docker push johnd/votingapp_result-app
 ...
 ```
- 
+
 <a id="entercompetition"></a>
 ### 3.3 Enter competition
 
@@ -689,7 +689,7 @@ Double check once again the content of ```config.json file``` to make sure all t
 
 ```
 $ cd example-voting-app
-$ docker-compose up -d 
+$ docker-compose up -d
 ```  
 
 Get the *ID* of the running container running from image *examplevotingapp_result-app*:
@@ -721,9 +721,9 @@ Open a browser and access [http://192.168.64.2:5001/birthday.html](http://192.16
 The page displayed will look like the one below:
 
 
-<img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/tutorial-images/submit_work.png" title="static">
+<img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/master/tutorial-images/submit_work.png" title="static">
 
-Button message is more than intuitive so go ahead and press it. 
+Button message is more than intuitive so go ahead and press it.
 
 Soon as you did you need to return to your docker container where you are watching the log files and the output should look like:
 
@@ -745,7 +745,7 @@ Another way of submitting work in the competition is by making use of ```curl```
 $ curl -H "Content-type: application/json" \
 	-X POST -d @config.json \
 	http://dockerize.it/competition
-	
+
 {"response": "http://dockerize.it/competition/56df6ea39be64d001328870e"}
 ```
 The API will return a link where you can check the status of your submission.
