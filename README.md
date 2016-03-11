@@ -31,19 +31,21 @@ At the training, you will need to bring your own computer. Before you go to a bi
 1. [Install Docker](https://docs.docker.com/engine/installation/)
 1. If you have a Mac or Windows machine, you should have [Docker Machine](https://docs.docker.com/machine/overview/). If you're using Linux you can skip to the next step.
 1. If you're new to Docker, pre-pull the docker images for the very basic tutorial
-```bash
-docker pull hello-world
-docker pull busybox
-docker pull seqvence/static-site
+
+   ```bash
+   docker pull hello-world
+   docker pull busybox
+   docker pull seqvence/static-site
 ```
 1. To run the application and participate in the rest of the training, pre-pull these images
-```bash
-docker pull node:0.10
-docker pull python:2.7-alpine
-docker pull java:7
-docker pull redis:alpine
-docker pull postgres:9.4
-```
+
+   ```bash
+   docker pull node:0.10
+   docker pull python:2.7-alpine
+   docker pull java:7
+   docker pull redis:alpine
+   docker pull postgres:9.4
+   ```
 And now you're ready. See you at the birthday party!
 
 <a href="https://www.docker.com/docker-birthday"><img align="right" src="https://www.docker.com/sites/default/files/illustration-com-container-party.png"></a>
