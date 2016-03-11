@@ -1,17 +1,14 @@
 <a id="top"></a>
 <img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/tutorial-images/logo.png" alt="docker logo">
 
-*Learn to build and deploy your distributed applications easily to the cloud with Docker*
+Special thanks and shout out to [Prakhar Srivastav](http://prakhar.me) for his contribution to this tutorial. 
 
 <a href="#top" class="top" id="getting-started">Top</a>
 ## Getting Started: FAQs
 
-### What is Docker?
-Wikipedia defines [Docker](https://www.docker.com/) as
+### What is Docker Engine?
 
-> an open-source project that automates the deployment of software applications inside **containers** by providing an additional layer of abstraction and automation of **OS-level virtualization** on Linux.
-
-In simpler words, Docker is a tool that allows developers, sys-admins etc. to easily deploy their applications in a sandbox (called *containers*) to run on the host operating system i.e. Linux. The key benefit of Docker is that it allows users to **package an application with all of its dependencies into a standardized unit** for software development. Unlike virtual machines, containers do not have the high overhead and hence enable more efficient usage of the underlying system and resources.
+In simpler words, Docker Engine is a tool that allows developers, sys-admins etc. to easily deploy their applications in a sandbox (called *containers*) to run on the host operating system i.e. Linux. The key benefit of Docker Engine is that it allows users to **package an application with all of its dependencies into a standardized unit** for software development. Unlike virtual machines, containers do not have the high overhead and hence enable more efficient usage of the underlying system and resources.
 
 
 ### What are containers?
