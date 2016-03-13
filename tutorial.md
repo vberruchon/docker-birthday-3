@@ -40,7 +40,6 @@ This document contains a series of several sections, each of which explains a pa
     -   [2.3 Our First Image](#our-image)
     -   [2.4 Dockerfile](#dockerfiles)
     -   [2.5 Push image to Docker Hub](#pushimage)
-    -   [2.6 Docker compose](#dockercompose)
 -	 [3.0 Enter competition](#dockercompetition)
 	- [3.1 Pull voting-app images](#pullimage)
 	- [3.2 Instruction for building your voting app](#buildvotingapp)
@@ -512,21 +511,16 @@ acb71626a146: Pushed
 
 \*Replace *YOUR_USERNAME* and *YOUR\_EMAIL\_ADDRESS* with your [Docker hub](https://hub.docker.com) username and your email address used during registration.
 
-<a id="dockercompose"></a>
-### 2.6 [Docker compose](https://docs.docker.com/compose/)
-
-You know now how to build your own Docker image so let's take it to the next level and glue things together. For this assignment you have to run multiple containers and using Docker compose is the best way to achieve that.
-
-Start by quickly reading the documentation available [here](https://docs.docker.com/compose/overview/).
-
-Once you are familiar with Docker compose install it using the [instructions](https://docs.docker.com/compose/install/).
-
-
 <a id="dockercompetition"></a>
 ## 3 Docker birthday competition
 
 <a id="pullimage"></a>
 ### 3.1 Pull voting-app images
+You know now how to build your own Docker image so let's take it to the next level and glue things together. For this app you have to run multiple containers and using Docker compose is the best way to achieve that.
+
+Start by quickly reading the documentation available [here](https://docs.docker.com/compose/overview/).
+
+Once you are familiar with Docker compose install it using these [instructions](https://docs.docker.com/compose/install/).
 
 Pull the voting-app repository already available at [Github Repo](https://github.com/docker/docker-birthday-3.git/example-voting-app).
 
