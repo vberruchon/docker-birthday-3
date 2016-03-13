@@ -303,7 +303,7 @@ In order to install Python modules required for our app we need to add to **requ
 Flask==0.10.1
 ```
 
-Create directory template and edit there **index.html** file to have the same content as below:
+Create directory templates and edit there **index.html** file to have the same content as below:
 
 ```
 <html>
@@ -394,7 +394,7 @@ EXPOSE 5000
 The last step is simply to write the command for running the application which is simply - `python ./app.py`. you use the [CMD](https://docs.docker.com/engine/reference/builder/#cmd) command to do that -
 
 ```
-CMD ["python", "./app.py"]
+CMD ["python", "/usr/src/app/app.py"]
 ```
 
 The primary purpose of `CMD` is to tell the container which command it should run when it is started. With that, our `Dockerfile` is now ready. This is how it looks like -
