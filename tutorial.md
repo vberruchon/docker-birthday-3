@@ -199,7 +199,7 @@ Now that you've seen how to run a webserver inside a docker image, you must be w
 
 ```
 $ docker stop static-site
-$ docker rm statis-site
+$ docker rm static-site
 ```
 
 <a id="docker-images"></a>
