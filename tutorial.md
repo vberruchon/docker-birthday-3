@@ -339,18 +339,11 @@ Create directory templates and edit there **index.html** file to have the same c
 </html>
 ```
 
-The next step now is to create an image with this web app. As mentioned above, all user images are based off a base image. Since our application is written in Python, the base image we're going to use will be [Python 3](https://hub.docker.com/_/python/). More specifically, you are going to use the `python:3-onbuild` version of the python image.
+The next step now is to create an image with this web app. As mentioned above, all user images are based off a base image. Since our application is written in Python, the base image we're going to use will be [Python 3](https://hub.docker.com/_/python/). We'll do that using a **Dockerfile**.
 
-What's the `onbuild` version you might ask?
+First, create and start editing a file called Dockerfile.
 
-> These images include multiple ONBUILD triggers, which should be all you need to bootstrap most applications. The build will COPY a `requirements.txt` file, RUN `pip install` on said file, and then copy the current directory into `/usr/src/app`.
-
-In other words, the `onbuild` version of the image includes helpers that automate the boring parts of getting an app running. Rather than doing these tasks manually (or scripting these tasks), these images do that work for you. you now have all the ingredients to create our own image - a functioning web app and a base image. How are you going to do that? The answer is - using a **Dockerfile**.
-
-
-Having all the pieces created it is now time to create the **Dockerfile**.
-
-You start by specifying our base image. Use the `FROM` keyword to do that
+Now start by specifying our base image. Use the `FROM` keyword to do that
 
 ```
 FROM alpine:latest
