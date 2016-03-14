@@ -341,9 +341,7 @@ Create directory templates and edit there **index.html** file to have the same c
 
 The next step now is to create an image with this web app. As mentioned above, all user images are based off a base image. Since our application is written in Python, the base image we're going to use will be [Python 3](https://hub.docker.com/_/python/). We'll do that using a **Dockerfile**.
 
-First, create and start editing a file called Dockerfile.
-
-Now start by specifying our base image. Use the `FROM` keyword to do that
+Open Dockerfile. Now start by specifying our base image. Use the `FROM` keyword to do that
 
 ```
 FROM alpine:latest
