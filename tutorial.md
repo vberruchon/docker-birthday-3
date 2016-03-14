@@ -189,13 +189,18 @@ $ docker-machine ip default
 You can now open [http://192.168.99.100:32772](http://192.168.99.100:32772) to see your site live! You can also specify a custom port to which the client will forward connections to the container.
 
 ```
-$ docker run --name static-site -e AUTHOR=Your_Name -d -p 8888:80 seqvence/static-site
+$ docker run --name static-site -e -e=Your_Name -d -p 8888:80 seqvence/static-site
 ```
 <img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/master/tutorial-images/static.png" title="static">
 
 I'm sure you agree that was super simple. To deploy this on a real server you would just need to install docker, and run the above docker command.
 
-Now that you've seen how to run a webserver inside a docker image, you must be wondering - how do I create my own docker image? This is the question we'll be exploring in the next section.
+Now that you've seen how to run a webserver inside a docker image, you must be wondering - how do I create my own docker image? This is the question we'll be exploring in the next section. But first, let's stop and remove the container since you won't be using it anymore.
+
+```
+$ docker stop static-site
+$ docker rm statis-site
+```
 
 <a id="docker-images"></a>
 ### 2.2 Docker Images
@@ -334,20 +339,7 @@ Create directory templates and edit there **index.html** file to have the same c
 </html>
 ```
 
-Before you get started on creating the image, let's first test that the application works correctly locally. Step one is to `cd` into the `flask-app` directory and install the dependencies
-
-```
-$ cd flask-app
-$ pip install -r requirements.txt
-$ python app.py
- * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
-```
-
-If all goes well, you should see the output as above. Head over to [http://localhost:5000](http://localhost:5000) to see the app in action.
-
-> Note: If `pip install` is giving you permission denied errors, you might need to try running the command as `sudo`.
-
-Looks great doesn't it? The next step now is to create an image with this web app. As mentioned above, all user images are based off a base image. Since our application is written in Python, the base image we're going to use will be [Python 3](https://hub.docker.com/_/python/). More specifically, you are going to use the `python:3-onbuild` version of the python image.
+The next step now is to create an image with this web app. As mentioned above, all user images are based off a base image. Since our application is written in Python, the base image we're going to use will be [Python 3](https://hub.docker.com/_/python/). More specifically, you are going to use the `python:3-onbuild` version of the python image.
 
 What's the `onbuild` version you might ask?
 
@@ -481,7 +473,12 @@ Head over to the URL above and your app should be live.
 
 <img src="https://raw.githubusercontent.com/docker/Docker-Birthday-3/master/tutorial-images/catgif.png" title="static">
 
-Congratulations! You have successfully created your first docker image.
+OK now that you are done with the this container, stop and remove it since you won't be using it again.
+
+```
+$ docker stop YOUR_USERNAME/myfirstapp
+$ docker rm YOUR_USERNAME/myfirstapp
+```
 
 <a id="pushimage"></a>
 ### 2.5 Push image to [Docker hub](https://hub.docker.com)
